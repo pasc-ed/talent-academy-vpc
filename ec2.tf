@@ -26,6 +26,8 @@ data "aws_ami" "my_aws_ami" {
     }
 }
 
-# resource "aws_instance" "my_ec2_instance" {
-#     ami = data.aws_ami.my_aws_ami.id
-# }
+# EC2
+# AMI ID
+# KEYPAIR
+# SUBNET - Private
+# SECURITY GROUP
