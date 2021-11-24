@@ -31,3 +31,4 @@ data "aws_ami" "my_aws_ami" {
 # KEYPAIR
 # SUBNET - Private
 # SECURITY GROUP
+# USER-DATA template (optional)
