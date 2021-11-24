@@ -41,3 +41,9 @@ resource "aws_instance" "my_first_server" {
 # SUBNET - Private
 # SECURITY GROUPS
 # USER-DATA template (optional)
+
+# TASK:
+# NEW EC2 in Public subnet
+# Check the public IP Address exists or add the EIP to the server
+# SSH using the keypair to the new public server
+# Try to copy your private key to the public server and connect to the private server.
