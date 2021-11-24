@@ -17,3 +17,15 @@ resource "aws_security_group" "my_app_sg" {
   }
 }
 
+data "aws_ami" "my_aws_ami" {
+    owners = ["137112412989"]
+    most_recent = true
+    filter {
+        name = "name"
+        values = [ "amzn2-ami-kernel-*" ]
+    }
+}
+
+# resource "aws_instance" "my_ec2_instance" {
+#     ami = data.aws_ami.my_aws_ami.id
+# }
