@@ -27,9 +27,17 @@ data "aws_ami" "my_aws_ami" {
 }
 
 # EC2
+resource "aws_instance" "my_first_server" {
+    ami = data.aws_ami.my_aws_ami.id
+    instance_type = var.instance_type
+    key_name = var.keypair_name
+    subnet_id = aws_subnet.private_a.id
+    security_groups = [ aws_security_group.my_app_sg.id ]
+}
+
 # AMI ID
 # INSTANCE TYPE
 # KEYPAIR
 # SUBNET - Private
-# SECURITY GROUP
+# SECURITY GROUPS
 # USER-DATA template (optional)

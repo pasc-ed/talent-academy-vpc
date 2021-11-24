@@ -42,3 +42,15 @@ variable "private_a_cidr" {
     description = "CIDR of the private Subnet in AZ A"
     type = string
 }
+
+# INSTANCE
+variable "instance_type" {
+    description = "The type of my first server"
+    type = string
+    default = "t2.medium"
+}
+
+variable "keypair_name" {
+    description = "Name of my key pair on the console"
+    type = string
+}
