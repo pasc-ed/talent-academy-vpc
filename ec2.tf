@@ -28,6 +28,7 @@ data "aws_ami" "my_aws_ami" {
 
 # EC2
 # AMI ID
+# INSTANCE TYPE
 # KEYPAIR
 # SUBNET - Private
 # SECURITY GROUP
